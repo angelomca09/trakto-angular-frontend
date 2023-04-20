@@ -26,6 +26,26 @@
   --brand-green: #1dc763;
 
   --image-url: url(https://s3-alpha-sig.figma.com/img/767e/fe3a/d123ca8d35792a659c81c042c24070fe?Expires=1682899200&Signature=QP~5zp6A1aA-8d2v1yka9ir2FFbviOKebWtTwKhxPRNhLxY1g8-Wiab91zE-92t55dNg-4hSNSMdKLLt3x~H2eIgFLigb7Kfua0r8HFLcUC8EQKV4-LsBP5btjx7AChjd6mPLcSjYlyJ48672LiY2Pjz8myvUJUe8fX3OiJu~ylPa6aWjrxCTlYRXokOfe5nwD7HyoFa2kL-LeBb3eEsYYBT~pD7ru-1JGy6EAsYWWzDI-vaR2jWT-wEKX1YLMgXDAgX7L4ta5L74vd9dj-BvU-uMsuLut3iLP9eoh3IKAFnQk3-DiTFAlG9CAiFAJiENdQzXD3OsWC4v14jDcFh8w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+
+  --jornada-bg-color: radial-gradient(
+        51.99% 51.99% at 64.17% 37.22%,
+        rgba(85, 230, 186, 0.639) 0%,
+        rgba(193, 229, 255, 0) 68.67%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        109.13% 109.13% at 77.27% -19.92%,
+        rgba(85, 125, 230, 0.261) 0%,
+        rgba(2, 39, 66, 0) 69.98%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    radial-gradient(
+        46.04% 46.04% at 26.85% 43.18%,
+        rgba(255, 230, 0, 0.5) 0%,
+        rgba(103, 191, 255, 0) 69.98%
+      )
+      /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */,
+    linear-gradient(180deg, #16984c 0%, #16b357 100%);
 }
 
 body {

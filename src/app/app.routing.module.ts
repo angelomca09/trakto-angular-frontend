@@ -6,6 +6,7 @@ import { RedirectGuard } from './shared/components/redirect/redirect.component';
 import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { SignInComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
+import { MaterialDidaticoComponent } from './material-didatico/material-didatico.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'home',
     component: HomeComponent
+  },
+  {
+    path: 'materialdidatico',
+    component: MaterialDidaticoComponent
   },
   {
     path: 'youtube',

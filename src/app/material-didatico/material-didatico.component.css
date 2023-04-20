@@ -1,0 +1,80 @@
+.material-didatico {
+  height: 100vh;
+  background: var(--light-bg-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding: 77px 64px 0;
+}
+
+.material-didatico > * {
+  margin-top: 32px;
+}
+
+.jornada {
+  position: relative;
+  width: 100%;
+  height: 584px;
+  background-image: var(--image-url), var(--jornada-bg-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 150px;
+}
+
+.jornada .text {
+  color: #fff;
+  min-width: 774px;
+  margin-bottom: 25px;
+}
+
+.jornada .text h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 130%;
+  margin-bottom: 15px;
+}
+.jornada .text p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+
+  opacity: 0.9;
+}
+
+.jornada .picture {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.jornada svg#arrow {
+  position: absolute;
+  top: 330px;
+  left: 850px;
+}
+
+.jornada .picture img {
+  position: absolute;
+  height: 675px;
+  width: 449px;
+  top: -14px;
+  left: 257px;
+}
+
+.jornada .picture svg#vector {
+  position: absolute;
+  width: 143.22px;
+  height: 551px;
+  top: 20px;
+  left: 560px;
+}

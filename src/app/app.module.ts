@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app.routing.module';
 import { ErrorsModule } from './errors/errors.module';
 import { SigninModule } from './signin/signin.module';
 import { HomeModule } from './home/home.module';
+import { MaterialDidaticoModule } from './material-didatico/material-didatico.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeModule } from './home/home.module';
     AppRoutingModule,
     ErrorsModule,
     SigninModule,
-    HomeModule
+    HomeModule,
+    MaterialDidaticoModule
   ],
   providers: [RedirectGuard],
   bootstrap: [AppComponent]
