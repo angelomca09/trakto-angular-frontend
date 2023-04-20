@@ -1,15 +1,28 @@
 /* Header */
+:host {
+  display: contents;
+}
 
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #252323;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 65px;
+}
+
+.header.dark {
+  background: #252323;
+}
+
+.header.light {
+  background: #ffffff;
+}
+.header.light svg path:nth-child(1) {
+  fill: var(--dark-text-color);
 }
 
 .header svg {
