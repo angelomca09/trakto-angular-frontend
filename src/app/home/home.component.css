@@ -1,0 +1,12 @@
+.home {
+  height: 100vh;
+  background: var(--image-url) var(--darl-bg-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-size: cover;
+  display: grid;
+  place-items: center;
+}
+
+/* Icons */
