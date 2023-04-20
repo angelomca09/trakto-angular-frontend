@@ -32,39 +32,3 @@ body {
   font-family: "Roboto";
   font-style: normal;
 }
-
-home-icon-list,
-home-icon {
-  display: contents;
-}
-
-home-icon:nth-of-type(1) .icon-title::before {
-  background: #4173cd;
-}
-home-icon:nth-of-type(2) .icon-title::before {
-  background: #1dc763;
-}
-home-icon:nth-of-type(3) .icon-title::before {
-  background: #f6b5ff;
-}
-home-icon:nth-of-type(4) .icon-title::before {
-  background: #ff0000;
-}
-
-home-icon:nth-of-type(1) .icon-bg {
-  background-color: #c2d8ff;
-}
-home-icon:nth-of-type(2) .icon-bg {
-  background-color: #91dea2;
-}
-home-icon:nth-of-type(3) .icon-bg {
-  background-color: #f4aeff;
-}
-home-icon:nth-of-type(4) .icon-bg {
-  background-color: #ffbfbf;
-}
-
-home-icon:nth-of-type(1) .icon-bg img {
-  top: 5%;
-  left: -5%;
-}

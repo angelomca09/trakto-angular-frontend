@@ -1,3 +1,7 @@
+:host {
+  display: contents;
+}
+
 .icon-container {
   display: flex;
   justify-content: center;
@@ -55,4 +59,35 @@
 .icon-container .icon-bg svg {
   width: 150px;
   /* height: 138.29px; */
+}
+
+:host:nth-of-type(1) .icon-title::before {
+  background: #4173cd;
+}
+:host:nth-of-type(2) .icon-title::before {
+  background: #1dc763;
+}
+:host:nth-of-type(3) .icon-title::before {
+  background: #f6b5ff;
+}
+:host:nth-of-type(4) .icon-title::before {
+  background: #ff0000;
+}
+
+:host:nth-of-type(1) .icon-bg {
+  background-color: #c2d8ff;
+}
+:host:nth-of-type(2) .icon-bg {
+  background-color: #91dea2;
+}
+:host:nth-of-type(3) .icon-bg {
+  background-color: #f4aeff;
+}
+:host:nth-of-type(4) .icon-bg {
+  background-color: #ffbfbf;
+}
+
+:host:nth-of-type(1) .icon-bg img {
+  top: 5%;
+  left: -5%;
 }
