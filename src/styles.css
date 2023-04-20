@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 *,
 *::after,
 *::before {
@@ -15,15 +17,55 @@
 
 :root {
   --light-bg-color: #eff2f9;
+  --darl-bg-color: #1d1b1b;
   --dark-text-color: #04183e;
   --active-color: #0095ff;
   --border-active-color: #66afff;
   --neutral-light: #e4ebfb;
   --neutral-clear: #d0daef;
   --brand-green: #1dc763;
+
+  --image-url: url(https://s3-alpha-sig.figma.com/img/767e/fe3a/d123ca8d35792a659c81c042c24070fe?Expires=1682899200&Signature=QP~5zp6A1aA-8d2v1yka9ir2FFbviOKebWtTwKhxPRNhLxY1g8-Wiab91zE-92t55dNg-4hSNSMdKLLt3x~H2eIgFLigb7Kfua0r8HFLcUC8EQKV4-LsBP5btjx7AChjd6mPLcSjYlyJ48672LiY2Pjz8myvUJUe8fX3OiJu~ylPa6aWjrxCTlYRXokOfe5nwD7HyoFa2kL-LeBb3eEsYYBT~pD7ru-1JGy6EAsYWWzDI-vaR2jWT-wEKX1YLMgXDAgX7L4ta5L74vd9dj-BvU-uMsuLut3iLP9eoh3IKAFnQk3-DiTFAlG9CAiFAJiENdQzXD3OsWC4v14jDcFh8w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
 }
 
 body {
   font-family: "Roboto";
   font-style: normal;
+}
+
+ap-header,
+home-icon-list,
+home-icon {
+  display: contents;
+}
+
+home-icon:nth-of-type(1) .icon-title::before {
+  background: #4173cd;
+}
+home-icon:nth-of-type(2) .icon-title::before {
+  background: #1dc763;
+}
+home-icon:nth-of-type(3) .icon-title::before {
+  background: #f6b5ff;
+}
+home-icon:nth-of-type(4) .icon-title::before {
+  background: #ff0000;
+}
+
+home-icon:nth-of-type(1) .icon-bg {
+  background-color: #c2d8ff;
+}
+home-icon:nth-of-type(2) .icon-bg {
+  background-color: #91dea2;
+}
+home-icon:nth-of-type(3) .icon-bg {
+  background-color: #f4aeff;
+}
+home-icon:nth-of-type(4) .icon-bg {
+  background-color: #ffbfbf;
+}
+
+home-icon:nth-of-type(1) .icon-bg img {
+  top: 5%;
+  left: -5%;
 }
