@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
+import { RedirectGuard } from './shared/components/redirect/redirect.component';
+
 import { AppRoutingModule } from './app.routing.module';
 import { ErrorsModule } from './errors/errors.module';
 import { SigninModule } from './signin/signin.module';
@@ -18,7 +20,7 @@ import { HomeModule } from './home/home.module';
     SigninModule,
     HomeModule
   ],
-  providers: [],
+  providers: [RedirectGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

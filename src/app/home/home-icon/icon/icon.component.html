@@ -1,4 +1,8 @@
-<a [href]="href" [target]="svg ? '_blank' : '_self'" class="icon-container">
+<a
+  [routerLink]="[href]"
+  [target]="svg ? '_blank' : '_self'"
+  class="icon-container"
+>
   <h2 class="icon-title">{{ title }}</h2>
   <div class="icon-bg">
     <svg
