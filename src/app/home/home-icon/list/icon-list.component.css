@@ -1,0 +1,19 @@
+.icon-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* .icon-container:nth-child(1) .icon-title::before {
+  background: #4173cd;
+}
+.icon-container:nth-child(2) .icon-title::before {
+  background: #1dc763;
+}
+.icon-container:nth-child(3) .icon-title::before {
+  background: #f6b5ff;
+}
+.icon-container:nth-child(4) .icon-title::before {
+  background: #ff0000;
+} */
