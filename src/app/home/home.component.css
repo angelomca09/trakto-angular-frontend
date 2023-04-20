@@ -1,6 +1,6 @@
 .home {
   height: 100vh;
-  background: var(--image-url) var(--darl-bg-color);
+  background: var(--image-url) var(--dark-bg-color);
   background-size: cover;
   background-repeat: no-repeat;
   background-blend-mode: soft-light;
