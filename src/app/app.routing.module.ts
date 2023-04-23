@@ -7,23 +7,28 @@ import { NotFoundComponent } from './errors/not-found/not-found.component';
 import { SignInComponent } from './signin/signin.component';
 import { HomeComponent } from './home/home.component';
 import { MaterialDidaticoComponent } from './material-didatico/material-didatico.component';
+import { AuthGuard } from './core/auth/auth.guard';
+import { NoAuthGuard } from './core/auth/noAuth.guard';
 
 const routes: Routes = [
   {
     path: '',
-    component: SignInComponent
+    component: SignInComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: 'home',
-    component: HomeComponent
+    component: HomeComponent,
+    canActivate: [NoAuthGuard]
   },
   {
     path: 'materialdidatico',
-    component: MaterialDidaticoComponent
+    component: MaterialDidaticoComponent,
+    canActivate: [NoAuthGuard]
   },
   {
     path: 'youtube',
-    canActivate: [RedirectGuard],
+    canActivate: [NoAuthGuard, RedirectGuard],
     component: RedirectGuard,
     data: {
       externalUrl: 'https://www.youtube.com/@Trakto'
