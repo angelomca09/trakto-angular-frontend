@@ -8,6 +8,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 79px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,15 +17,90 @@
 
 .header.dark {
   background: #252323;
+  color: var(--neutral-light);
 }
 
 .header.light {
   background: #ffffff;
+  color: var(--neutral-cloudy);
 }
-.header.light svg path:nth-child(1) {
+
+.header.light .logo svg path:nth-child(1) {
   fill: var(--dark-text-color);
 }
 
-.header svg {
+.header.light .info svg path {
+  stroke: var(--neutral-cloudy);
+}
+.header.light .info svg path:last-child {
+  fill: var(--neutral-cloudy);
+}
+
+.header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .logo > svg:nth-child(1) {
   margin-top: 15px;
+}
+
+.header .logo a.return-button {
+  margin: 10px 0;
+  margin-left: 56px;
+  padding: 16.5px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 23px;
+  text-decoration: none;
+  color: var(--neutral-cloudy);
+
+  border-radius: 8px;
+  border: 1px solid var(--neutral-cloudy);
+}
+
+.header .logo a.return-button svg path {
+  fill: none;
+}
+
+.header .info,
+.header .info > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .info > div {
+  position: relative;
+  gap: 8px;
+  padding: 0 32px;
+}
+
+.header .info > div:last-child {
+  padding-right: 0;
+}
+
+.header .info > div:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 24px;
+  width: 1px;
+  background: var(--neutral-light);
+}
+
+.header .info > div > img.user-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
 }
