@@ -3,7 +3,6 @@ import { SignInComponent } from './signin.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-
 @NgModule({
   declarations: [SignInComponent],
   imports: [
