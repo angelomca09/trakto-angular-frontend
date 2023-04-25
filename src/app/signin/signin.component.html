@@ -42,11 +42,15 @@
     </div>
 
     <button
-      [disabled]="loginForm.invalid"
+      [disabled]="loginForm.invalid || loading"
       type="submit"
-      class="btn btn-primary btn-block loading"
+      class="btn btn-primary btn-block"
+      [ngClass]="{ loading: loading }"
     >
-      Entrando...
+      <span *ngIf="loading"
+        ><button-loader></button-loader>&nbsp;Entrando...</span
+      >
+      <span *ngIf="!loading">Entrar</span>
     </button>
   </form>
 </div>

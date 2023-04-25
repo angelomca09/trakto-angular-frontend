@@ -11,6 +11,7 @@ import { AuthService } from '../core/auth/auth.service';
 export class SignInComponent implements OnInit {
 
   loginForm: FormGroup;
+  loading: boolean = false;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -28,15 +29,19 @@ export class SignInComponent implements OnInit {
     const email = this.loginForm.get('email').value;
     const password = this.loginForm.get('password').value;
 
+    this.loading = true;
+
     //TODO: button.loading and Spinner
     this.authService.authenticate(email, password)
       .subscribe(
         () => {
           this.router.navigate(["home"]);
+          this.loading = false;
         },
         err => {
           console.log(err);
           this.loginForm.reset();
+          this.loading = false;
           alert('Invalid email or password');
         })
 

@@ -70,6 +70,14 @@
 }
 
 .signin button.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   background: var(--brand-green);
   border-color: var(--brand-green);
+}
+
+.signin button.loading > * {
+  display: contents;
 }
