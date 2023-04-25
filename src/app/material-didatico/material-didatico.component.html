@@ -92,11 +92,14 @@
           />
         </svg>
       </div>
-      <a class="all-content"> Ver todo conteúdo </a>
+      <a [routerLink]="['../', 'allmaterials']" class="all-content">
+        Ver todo conteúdo
+      </a>
     </div>
     <h3>Material Didático</h3>
     <p>Acesse suas últimas apresentações de aula.</p>
     <div class="scroll-content-wrapper">
+      <loader *ngIf="loading"></loader>
       <material
         *ngFor="let material of materials"
         [id]="material.id"

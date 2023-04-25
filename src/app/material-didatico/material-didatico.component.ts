@@ -9,6 +9,7 @@ export class MaterialDidaticoComponent implements OnInit {
 
   materials: MaterialDidatico[] = [];
   videos: YoutubeVideo[] = yt_videos;
+  loading: boolean = true;
 
   constructor(
     private materialDidaticoService: MaterialDidaticoService
@@ -19,10 +20,11 @@ export class MaterialDidaticoComponent implements OnInit {
   }
 
   load() {
-    this.materialDidaticoService.listMaterials()
+    this.loading = true;
+    this.materialDidaticoService.listMaterials(10)
       .subscribe(res => {
-        this.materials = [...res.data, ...res.data]
-        console.log(this.materials)
+        this.materials = res.data;
+        this.loading = false;
       })
   }
 }
