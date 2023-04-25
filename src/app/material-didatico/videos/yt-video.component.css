@@ -1,0 +1,75 @@
+:host {
+  display: contents;
+}
+
+.video-box {
+  width: 310px;
+  height: 174px;
+  display: inline-flex;
+  position: relative;
+}
+
+:host:not(:last-child) > a > .video-box {
+  margin-right: 32px;
+}
+
+.video-box > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-box > .video-header {
+  position: absolute;
+  width: 100%;
+  padding: 7px;
+  background: linear-gradient(rgba(23, 23, 23, 0.8), rgba(0, 0, 0, 0));
+}
+
+.video-box > .video-header > img {
+  height: 24px;
+  width: 24px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.video-box > .video-header > span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10.7308px;
+  line-height: 13px;
+
+  color: #ffffff;
+}
+
+.video-box > .video-header > svg {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.video-box > svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.video-box > span.watch-on-youtube {
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  padding: 9px 7px;
+  background: rgba(23, 23, 23, 0.8);
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 9.53846px;
+  line-height: 11px;
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+}
