@@ -100,6 +100,14 @@
   background: var(--neutral-light);
 }
 
+.header .info span {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 .header .info > div > img.user-img {
   height: 40px;
   width: 40px;
