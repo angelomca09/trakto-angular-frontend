@@ -9,13 +9,14 @@ export class MaterialDidaticoService {
 
   constructor(private http: HttpClient) { }
 
-  listMaterials() {
-    const total_per_page = 10
-    const params = new HttpParams()
-      .append('total_per_page', total_per_page.toString());
+  listMaterials(total_per_page?: number) {
+    let params: HttpParams;
+    if (total_per_page)
+      params = new HttpParams()
+        .append('total_per_page', total_per_page.toString());
 
     return this.http
-      .get<{ data: MaterialDidatico[] }>(API_URL + '/document', { params });
+      .get<{ data: MaterialDidatico[] }>(API_URL + '/document', params ? { params } : undefined);
   }
 
 }
