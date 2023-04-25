@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MaterialDidatico } from './material-didatico';
+import { MaterialDidatico, YoutubeVideo, yt_videos } from './material-didatico';
 import { MaterialDidaticoService } from './material-didatico.service';
 @Component({
   templateUrl: './material-didatico.component.html',
@@ -8,6 +8,7 @@ import { MaterialDidaticoService } from './material-didatico.service';
 export class MaterialDidaticoComponent implements OnInit {
 
   materials: MaterialDidatico[] = [];
+  videos: YoutubeVideo[] = yt_videos;
 
   constructor(
     private materialDidaticoService: MaterialDidaticoService

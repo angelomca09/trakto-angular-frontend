@@ -5,6 +5,7 @@ import { HeaderModule } from '../shared/components/header/header.module';
 import { MaterialDidaticoComponent } from './material-didatico.component';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './material/material-didatico.module';
+import { YoutubeVideoModule } from './videos/yt-video.module';
 
 @NgModule({
   declarations: [MaterialDidaticoComponent],
@@ -13,7 +14,8 @@ import { MaterialModule } from './material/material-didatico.module';
     RouterModule,
     HeaderModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    YoutubeVideoModule
   ],
   exports: [MaterialDidaticoComponent]
 })

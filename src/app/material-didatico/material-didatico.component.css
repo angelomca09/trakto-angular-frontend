@@ -4,8 +4,8 @@
   background-size: cover;
   background-repeat: no-repeat;
 
-  overflow-y: auto;
-  padding: 77px 64px 0;
+  overflow-y: scroll;
+  padding: 77px 64px 662px;
 }
 
 .material-didatico::-webkit-scrollbar {
@@ -127,6 +127,23 @@
   font-size: 16px;
   line-height: 19px;
   color: var(--brand-blue);
+}
+
+.card-header1 .youtube-content {
+  border: 1px solid var(--brand-red);
+  border-radius: 8px;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--brand-red);
 }
 
 .card1 > h3 {
