@@ -8,9 +8,6 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-}
-
-:host:not(:last-child) > .material-box {
   margin-right: 32px;
 }
 

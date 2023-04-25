@@ -1,0 +1,19 @@
+<div class="material-didatico">
+  <ap-header theme="light"></ap-header>
+
+  <div class="card1">
+    <h3>Material Didático</h3>
+    <p>Acesse suas últimas apresentações de aula.</p>
+    <div class="all-content-wrapper">
+      <loader *ngIf="loading"></loader>
+      <material
+        *ngFor="let material of materials"
+        [id]="material.id"
+        [img]="material.cover.raw"
+        [title]="material.title"
+        [pages]="material.pages"
+      >
+      </material>
+    </div>
+  </div>
+</div>

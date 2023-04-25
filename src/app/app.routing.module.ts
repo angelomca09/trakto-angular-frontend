@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { MaterialDidaticoComponent } from './material-didatico/material-didatico.component';
 import { AuthGuard } from './core/auth/auth.guard';
 import { NoAuthGuard } from './core/auth/noAuth.guard';
+import { AllMaterialDidaticoComponent } from './material-didatico/all-material-didatico.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,11 @@ const routes: Routes = [
   {
     path: 'materialdidatico',
     component: MaterialDidaticoComponent,
+    canActivate: [NoAuthGuard]
+  },
+  {
+    path: 'allmaterials',
+    component: AllMaterialDidaticoComponent,
     canActivate: [NoAuthGuard]
   },
   {

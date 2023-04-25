@@ -85,11 +85,12 @@
   border-radius: 8px;
   background: #fff;
   border: none;
-  padding: 56px 72px 84px;
+  padding: 56px 0 84px;
 }
 
 .card-header1 {
   width: 100%;
+  padding: 0 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -148,6 +149,7 @@
 
 .card1 > h3 {
   height: 28px;
+  margin-left: 72px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -157,7 +159,7 @@
 }
 .card1 > p {
   height: 19px;
-
+  margin-left: 72px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -172,9 +174,17 @@
   height: 236px;
   width: auto;
   margin-top: 40px;
+  margin-left: 72px;
+
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
+}
+
+.all-content-wrapper {
+  display: block;
+  margin-top: 40px;
+  margin-left: 72px;
 }
 
 .scroll-content-wrapper::-webkit-scrollbar {
