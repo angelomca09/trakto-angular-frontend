@@ -58,6 +58,54 @@
       </svg>
     </div>
   </div>
-  <div class="material-card">Material Didático</div>
-  <div class="video-card">Vídeos</div>
+  <div class="material card1">
+    <div class="card-header1">
+      <div class="week-paginator">
+        <span class="week-label"
+          >Semana
+          <span>06/02</span>
+          até
+          <span>28/02</span></span
+        >
+        <svg
+          width="48"
+          height="21"
+          viewBox="0 0 48 21"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12.5 17.1L7.0667 11.6667C6.42503 11.025 6.42503 9.97499 7.0667 9.33333L12.5 3.89999"
+            stroke="#7183A6"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M35.425 17.1L40.8584 11.6667C41.5 11.025 41.5 9.97499 40.8584 9.33333L35.425 3.89999"
+            stroke="#7183A6"
+            stroke-width="1.5"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <a class="all-content"> Ver todo conteúdo </a>
+    </div>
+    <h3>Material Didático</h3>
+    <p>Acesse suas últimas apresentações de aula.</p>
+    <div class="scroll-content-wrapper">
+      <material
+        *ngFor="let material of materials"
+        [id]="material.id"
+        [img]="material.cover.raw"
+        [title]="material.title"
+        [pages]="material.pages"
+      >
+      </material>
+    </div>
+  </div>
+  <div class="video card1">Vídeos</div>
 </div>

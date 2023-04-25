@@ -3,10 +3,8 @@
   background: var(--light-bg-color);
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
+
+  overflow-y: auto;
   padding: 77px 64px 0;
 }
 
@@ -77,4 +75,88 @@
   height: 551px;
   top: 20px;
   left: 560px;
+}
+
+.card1 {
+  width: 100%;
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+  padding: 56px 72px 84px;
+}
+
+.card-header1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header1 .week-paginator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.card-header1 .week-paginator .week-label {
+  background: var(--neutral-light);
+  color: var(--neutral-cloudy);
+  padding: 4px 8px;
+  border-radius: 500px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  margin-right: 14px;
+}
+
+.card-header1 .all-content {
+  border: 1px solid var(--brand-blue);
+  border-radius: 8px;
+  padding: 16px 24px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--brand-blue);
+}
+
+.card1 > h3 {
+  height: 28px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--neutral-dark);
+}
+.card1 > p {
+  height: 19px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: var(--neutral-cloudy);
+}
+
+.scroll-content-wrapper {
+  display: block;
+  height: 236px;
+  width: auto;
+  margin-top: 40px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.scroll-content-wrapper::-webkit-scrollbar {
+  height: 0;
 }
