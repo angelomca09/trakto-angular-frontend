@@ -188,7 +188,7 @@
         />
       </svg>
     </div>
-    <div (click)="logout()" title="Logout">
+    <div (click)="toggleActive()">
       <img
         class="user-img"
         *ngIf="user != null"
@@ -208,5 +208,26 @@
         />
       </svg>
     </div>
+    <div class="menu" [ngClass]="{ active: active }">
+      <ul>
+        <a href="https://github.com/angelomca09" target="_blank">
+          <li>Github</li>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/angelo-munhoz-7b7402194/"
+          target="_blank"
+        >
+          <li>Linkedin</li>
+        </a>
+        <a (click)="logout()">
+          <li>Logout</li>
+        </a>
+      </ul>
+    </div>
   </div>
 </header>
+<div
+  class="menu-cover"
+  [ngClass]="{ active: active }"
+  (click)="toggleActive()"
+></div>

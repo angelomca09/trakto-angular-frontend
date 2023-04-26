@@ -14,6 +14,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 65px;
+  overflow: unset;
 }
 
 .header.dark {
@@ -85,11 +86,13 @@
   padding: 0 32px;
 }
 
-.header .info > div:last-child {
+.header .info > div:nth-last-child(1),
+.header .info > div:nth-last-child(2) {
   padding-right: 0;
 }
 
-.header .info > div:not(:last-child)::after {
+.header .info > div:nth-child(1):after,
+.header .info > div:nth-child(2):after {
   content: "";
   position: absolute;
   right: 0;
@@ -112,4 +115,83 @@
   height: 40px;
   width: 40px;
   border-radius: 50%;
+}
+
+.header .info > div.menu {
+  position: absolute;
+  top: calc(100% + 20px);
+  right: 40px;
+  z-index: 11;
+  overflow: unset;
+
+  width: 150px;
+  height: auto;
+  padding: 0;
+  background: #252323;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.header.light .info > div.menu {
+  background: #fff;
+}
+
+.header .info > div.menu::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 85px;
+  width: 20px;
+  height: 20px;
+  background: inherit;
+  transform: rotate(45deg);
+}
+
+.header .info > div.menu.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.header .info > div.menu ul {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  flex-direction: column;
+}
+
+.header .info > div.menu ul li {
+  list-style: none;
+  list-style-position: inside;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.5s;
+}
+
+.header .info > div.menu ul li:hover {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header .info > div.menu ul a {
+  color: inherit;
+}
+.header .info > div.menu ul a:hover {
+  text-decoration: none;
+}
+
+.menu-cover {
+  display: none;
+}
+
+.menu-cover.active {
+  display: block;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 9;
+  background-color: transparent;
 }

@@ -19,6 +19,8 @@ export class HeaderComponent implements OnInit {
 
   showRedirectButton: boolean;
 
+  active: boolean = false;
+
   constructor(
     private userService: UserService,
     private router: Router) {
@@ -37,6 +39,10 @@ export class HeaderComponent implements OnInit {
   logout() {
     this.userService.logout();
     this.router.navigate([""]);
+  }
+
+  toggleActive() {
+    this.active = !this.active
   }
 
 }
